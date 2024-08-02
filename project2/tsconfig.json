@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "baseUrl": ".",
+    "outDir": "../dist/project2",
+    "composite": true,
+  },
+  "include": ["./**/*.ts"],
+  "references": [
+    {
+      "path": "../project3"
+    }
+  ]
+}

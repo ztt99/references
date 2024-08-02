@@ -1,0 +1,20 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "baseUrl": ".",
+    "outDir": "../dist/project1",
+    "composite": true,
+    "moduleResolution":"node"
+  },
+  "include": ["./**/*.ts"],
+  "references": [
+    {
+      "path": "../project2"
+    },
+    {
+      "path": "../project3"
+    }
+  ]
+}
